@@ -1,0 +1,21 @@
+
+doctype html
+html(lang='ru')
+  block head
+    include ../includes/modules/head.pug
+
+  body
+    .page
+      block header
+        include ../includes/modules/header.pug
+
+      block sidebar
+        include ../includes/modules/sidebar.pug
+
+      main.main
+        .container
+           block body
+
+
+
+  script (src='js/app.js')

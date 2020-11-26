@@ -1,0 +1,29 @@
+header.header
+    .header__left
+        nav.nav
+            ul.nav__list
+                li.nav__item
+                    a.nav__link(href='#') Главная
+                li.nav__item
+                     a.nav__link.has-subnav(href='#') Статьи
+                     ul.subnav
+                         li
+                            a.subnav__link(href='#') Создание сайтов
+                         li
+                            a.subnav__link(href='#') Интернет-маркетинг
+                         li
+                            a.subnav__link(href='#') Продвижение видео
+                li.nav__item
+                    a.nav__link(href='#') Обо мне
+                li.nav__item
+                    a.nav__link(href='#') Реклама
+
+    .header__right
+       nav.nav
+          ul.nav__list
+              li.nav__item
+                   a.nav__link(href='#') Профиль
+              li.nav__item
+                  a.nav__link(href='#') Выйти
+       form.search(action='/' method='post')
+           input.search__input(type='text' placeholder='Поиск по блогу')

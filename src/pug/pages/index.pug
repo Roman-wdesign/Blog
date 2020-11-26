@@ -1,0 +1,40 @@
+extends ../layout/main.pug
+
+block body
+    .stories
+        .stories__item
+            img.stories__preview(src='assets/img/stories/Nature.jpg' alt='')
+            .stories__title Отдыхаю на природе
+            time.stories__date(datetime='2020-09-11 19:21') 11.09.2020
+
+
+        .stories__item
+             img.stories__preview(src='assets/img/stories/Diagram.jpg' alt='')
+             .stories__title Заканчиваю сложный проект
+             time.stories__date(datetime='2020-09-15 19:21') 15.09.2020
+
+        .stories__item
+             img.stories__preview(src='assets/img/stories/Apartments.jpg' alt='')
+             .stories__title Новые апартаменты
+             time.stories__date(datetime='2020-09-21 19:21') 21.09.2020
+
+
+        .stories__item
+             img.stories__preview(src='assets/img/stories/Autumn.jpg' alt='')
+             .stories__title Осень в разгаре
+             time.stories__date(datetime='2020-09-28 19:21') 28.09.2020
+
+    .add-post
+        form.add-post__form(action='/'  method='post')
+            textarea.add-post__textarea(name='post-text' placeholder='Напишите что-нибудь')
+            .add-post__form-actions
+                label.add-post__file(for='add-post-file')
+                    input#add-post-file(type='file')
+                button.add-post__send(type='submit')
+                    img(src='assets/img/add/send.svg' alt='Отправить')
+
+
+
+
+
+

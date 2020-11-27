@@ -68,7 +68,7 @@ article.post
     .post__header.post__header--video
         .embed
             a(href='#')
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5AwdkGKmZ0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/5AwdkGKmZ0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     .post__content
         h2.post__title
@@ -88,6 +88,26 @@ article.post
                 a(href='#') Создание сайтов
 
         a.post__read(href='#') оставить комментарий
+
+article.post
+    .post__header
+        a(href='#')
+            img.post__preview(src='assets/img/community.jpg' alt="Как я сходил на FrontEnd Conf 2021")
+
+    .post__content
+        h2.post__title
+            a(href='#') Как я сходил на FrontEnd Conf 2021
+        p.post__text
+            |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis repellat fuga ullam est expedita quasi magni exercitationem hic earum possimus, provident quae perferendis, voluptate veniam et modi asperiores libero!
+
+    .post__footer
+        ul.post__data
+            li.post__data-item
+                time(datetime='2020-06-21 19:20') 21.06.21
+            li.post__data-item
+                a(href='#') Events
+
+        a.post__read(href='#') читать
 
 
 

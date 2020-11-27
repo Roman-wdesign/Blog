@@ -1,6 +1,7 @@
 
 @import "utils/vars";
 @import "utils/reset";
+@import "utils/mixins";
 
 html {
   font-size: 62.5%;
@@ -36,4 +37,5 @@ body {
 @import "modules/search";
 @import "modules/stories";
 @import "modules/add-post";
+@import "modules/post";
 

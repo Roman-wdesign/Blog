@@ -1,1 +1,131 @@
 extends ../layout/main.pug
+
+block title
+    | Главная
+
+
+
+
+block body
+    .stories
+        .stories__item
+            img.stories__preview(src='assets/img/stories/Nature.jpg' alt='')
+            .stories__title Отдыхаю на природе
+            time.stories__date(datetime='2020-09-11 19:21') 11.09.2020
+
+
+        .stories__item
+            img.stories__preview(src='assets/img/stories/Diagram.jpg' alt='')
+            .stories__title Заканчиваю сложный проект
+            time.stories__date(datetime='2020-09-15 19:21') 15.09.2020
+
+        .stories__item
+            img.stories__preview(src='assets/img/stories/Apartments.jpg' alt='')
+            .stories__title Новые апартаменты
+            time.stories__date(datetime='2020-09-21 19:21') 21.09.2020
+
+
+        .stories__item
+            img.stories__preview(src='assets/img/stories/Autumn.jpg' alt='')
+            .stories__title Осень в разгаре
+            time.stories__date(datetime='2020-09-28 19:21') 28.09.2020
+
+    .add-post
+        form.add-post__form(action='/'  method='post')
+            textarea.add-post__textarea(name='post-text' placeholder='Напишите что-нибудь')
+            .add-post__form-actions
+                label.add-post__file(for='add-post-file')
+                    input#add-post-file(type='file')
+                button.add-post__send(type='submit')
+                    img(src='assets/img/add/send.svg' alt='Отправить')
+
+
+            // Add post
+    .post
+        .post__content
+            p.post__description
+                |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis repellat fuga ullam est expedita quasi magni exercitationem hic earum possimus, provident quae perferendis, voluptate veniam et modi asperiores libero!
+
+        .post__footer
+            ul.post__data
+                li.post__data-item
+                    time(datetime='2020-06-21 19:20') 21.06.21
+
+    article.post
+        .post__header.post__header--preview
+            a(href='#')
+                img.post__preview(src='assets/img/post-2.jpg' alt="Как писать код быстро и безболезненно?")
+
+        .post__content
+            h2.post__description
+                a(href='#') Как писать код быстро и безболезненно?
+            p.post__text
+                |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis repellat fuga ullam est expedita quasi magni exercitationem hic earum possimus, provident quae perferendis, voluptate veniam et modi asperiores libero!
+
+        .post__footer
+            ul.post__data
+                li.post__data-item
+                    time(datetime='2020-06-21 19:20') 21.06.21
+                li.post__data-item
+                    a(href='#') Создание сайтов
+
+            a.post__read(href='#') читать
+
+
+
+    article.post
+        .post__header
+            .embed
+                a(href='#')
+                    <iframe src="https://www.youtube.com/embed/5AwdkGKmZ0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        .post__content
+            h2.post__title
+                a(href='#') Хороший
+
+                b   MacBook
+
+                |   ускорит Вашу работу
+            p.post__text
+                |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis repellat fuga ullam est expedita quasi magni exercitationem hic earum possimus, provident quae perferendis, voluptate veniam et modi asperiores libero!
+
+        .post__footer
+            ul.post__data
+                li.post__data-item
+                    time(datetime='2020-06-21 19:20') 21.06.21
+                li.post__data-item
+                    a(href='#') Создание сайтов
+
+            a.post__read(href='#') оставить комментарий
+
+    article.post
+        .post__header.post__header--preview
+            a(href='#')
+                img.post__preview(src='assets/img/community.jpg' alt="Как я сходил на FrontEnd Conf 2021")
+
+        .post__content
+            h2.post__title
+                a(href='#') Как я сходил на FrontEnd Conf 2021
+            p.post__text
+                |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis repellat fuga ullam est expedita quasi magni exercitationem hic earum possimus, provident quae perferendis, voluptate veniam et modi asperiores libero!
+
+        .post__footer
+            ul.post__data
+                li.post__data-item
+                    time(datetime='2020-06-21 19:20') 21.06.21
+                li.post__data-item
+                    a(href='#') Конференции
+
+            a.post__read(href='#') читать
+
+    ul.pagination
+        li.pagination__item
+            a.pagination__link(href='#') <
+        li.pagination__item
+            a.pagination__link(href='#') 1
+        li.pagination__item
+            a.pagination__link.active(href='#') 2
+        li.pagination__item
+            a.pagination__link(href='#') 3
+        li.pagination__item
+            a.pagination__link(href='#') >

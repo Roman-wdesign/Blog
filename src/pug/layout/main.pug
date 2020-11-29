@@ -1,9 +1,16 @@
 
+
+
+
+
+
 doctype html
 html(lang='ru')
-  block head
-    include ../includes/modules/head.pug
-
+  head
+    block head
+      include ../includes/modules/head.pug
+        title
+           block title
   body
     .page
       block header
@@ -15,8 +22,12 @@ html(lang='ru')
       main.main
         .container
            block body
-             include ../includes/modules/body.pug
+
 
 
 
   script (src='js/app.js')
+//head
+    block head
+        title
+            block title

@@ -1,0 +1,52 @@
+extends ../layout/main.pug
+
+
+block title
+    | Новости и события
+
+
+
+block body
+    article.post
+        .post__actions
+            a(href='#') вернуться назад
+            a(href='#')
+                | поделиться
+                img.post__actions-icon(src='assets/img/share.svg' alt='поделиться')
+        .post__header.post__header--open
+            h1.post__title.post__title--mb0 Как я сходил на FrontEnd Conf 2021
+            ul.post__data
+                li.post__data-item
+                    time(datetime='2020-06-21 19:20') 21.06.21
+                li.post__data-item
+                    a(href='#') Конференции
+        .post__content
+            .post__text
+                h2 Title h2
+                    p
+                        |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis repellat fuga ullam est expedita quasi magni exercitationem hic earum possimus, provident quae perferendis, voluptate veniam et modi asperiores libero!
+
+                h3 Title h3
+                    p
+                        |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis repellat fuga ullam est expedita quasi magni exercitationem hic earum possimus, provident quae perferendis, voluptate veniam et modi asperiores libero!
+
+                h4 Title h4
+                    p
+                        |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis repellat fuga ullam est expedita quasi magni exercitationem hic earum possimus, provident quae perferendis, voluptate veniam et modi asperiores libero!
+
+                p
+                    img(src="" alt="")
+                ul
+                    li Item
+                    li Item
+                    li Item
+                ol
+                    li Item
+                    li Item
+                    li Item
+                table
+                    tbody
+                        tr
+                            td 1
+                            td 2
+                            td 3

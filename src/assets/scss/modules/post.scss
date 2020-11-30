@@ -38,6 +38,7 @@ font:{
 }
 
 .post__text{
+  padding-bottom: 1rem;
   font-size: 1.4rem;
   color: $white;
   border-bottom: 1px solid #1C1C1C;
@@ -73,10 +74,23 @@ font:{
   p{
     margin-bottom: 2rem;
   }
+a{
+  color: $blue;
+  text-decoration: none;
+  &:hover{
+  text-decoration: underline;
+}
 
+}
+  
   table{
     margin-bottom: 2rem;
     width: 100%;
+  }
+  img{
+    display: block;
+    min-width: 100%;
+    height: auto;
   }
 }
 

@@ -9,7 +9,7 @@ block title
 block body
     article.post
         .post__actions
-            a(href='#') вернуться назад
+            a(href='index.html') вернуться назад
             a(href='#')
                 | поделиться
                 img.post__actions-icon(src='assets/img/share.svg' alt='поделиться')
@@ -24,7 +24,11 @@ block body
             .post__text
                 h2 Title h2
                     p
-                        |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis repellat fuga ullam est expedita quasi magni exercitationem hic earum possimus, provident quae perferendis, voluptate veniam et modi asperiores libero!
+                        |   Lorem
+                        a(href='#')    ipsum dolor sit
+                        |    amet, consectetur adipisicing elit. Voluptatibus facilis repellat fuga ullam est
+                        |    expedita quasi magni exercitationem hic earum possimus, provident quae perferendis,
+                        |    voluptate veniam et modi asperiores libero!
 
                 h3 Title h3
                     p
@@ -35,7 +39,7 @@ block body
                         |   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis repellat fuga ullam est expedita quasi magni exercitationem hic earum possimus, provident quae perferendis, voluptate veniam et modi asperiores libero!
 
                 p
-                    img(src="" alt="")
+                    img(src='assets/img/post_page/screen_code.jpg' alt='')
                 ul
                     li Item
                     li Item
@@ -50,3 +54,32 @@ block body
                             td 1
                             td 2
                             td 3
+                p
+                    span.fr-video
+                        <iframe src="https://www.youtube.com/embed/5AwdkGKmZ0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            .related
+                h3.related__title Интересно почитать
+                ul.related__list
+                    li.related__list-item
+                        h4.related__list-title
+                            a(href='#') Как я сходил на FrontEnd Conf 2021
+                        time.related__list-date(datetime='2020-06-21 19:20') 21.06.21
+                    li.related__list-item
+                        h4.related__list-title
+                            a(href='#') Как я сходил на FrontEnd Conf 2021
+                        time.related__list-date(datetime='2020-06-21 19:20') 21.06.21
+                    li.related__list-item
+                        h4.related__list-title
+                            a(href='#') Как я сходил на FrontEnd Conf 2021
+                        time.related__list-date(datetime='2020-06-21 19:20') 21.06.21
+                    li.related__list-item
+                        h4.related__list-title
+                            a(href='#') Как я сходил на FrontEnd Conf 2021
+                        time.related__list-date(datetime='2020-06-21 19:20') 21.06.21
+            .comments
+                h3.comments__title Обсуждение
+                form.form(action='/' method='post')
+                    .form__group
+                        textarea.form__control.form__control--textarea(name='comment-text' placeholder='Текст комментария')
+                    button.btn.btn--blue.btn--rounded.btn--sm(type='submit') Отправить
+

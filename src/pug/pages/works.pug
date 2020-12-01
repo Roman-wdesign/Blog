@@ -1,0 +1,20 @@
+extends ../layout/main.pug
+
+block title
+    | Works
+
+block body
+    h1.page__title Мои работы
+    article.work
+        .work__preview
+            img(src='assets/img/work/work-1.jpg'  alt='work-1')
+        .work__content
+            h2.work__title
+                a(href='#' target='_blank') altermono.com
+            .work__decription
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium at hic laboriosam unde! At labore nostrum quidem repellat suscipit. Commodi error nam, optio praesentium qui reiciendis repellat tempora unde.
+            ul.tags
+                li.tags__item дизайн
+                li.tags__item создание сайта
+                li.tags__item SMM
+            button.btn.btn--blue.btn--rounded.btn--sm(href='#' target='_blank') Перейти на сайт

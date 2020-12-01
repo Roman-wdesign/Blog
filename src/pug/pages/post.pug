@@ -58,7 +58,7 @@ block body
                     span.fr-video
                         <iframe src="https://www.youtube.com/embed/5AwdkGKmZ0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             .related
-                h3.related__title Интересно почитать
+                h3.post__subtitle Интересно почитать
                 ul.related__list
                     li.related__list-item
                         h4.related__list-title
@@ -77,9 +77,40 @@ block body
                             a(href='#') Как я сходил на FrontEnd Conf 2021
                         time.related__list-date(datetime='2020-06-21 19:20') 21.06.21
             .comments
-                h3.comments__title Обсуждение
+                h3.post__subtitle Обсуждение
                 form.form(action='/' method='post')
                     .form__group
                         textarea.form__control.form__control--textarea(name='comment-text' placeholder='Текст комментария')
+                        span.form__line
                     button.btn.btn--blue.btn--rounded.btn--sm(type='submit') Отправить
+                ul.comments
+                    li.comments__item
+                        .comments__header
+                            img.comments__avatar(src='https://placehold.it/30' alt='')
+                            .comments__author
+                                .comments__name Роман Габбасов
+                                time.comments__update(datetime='2020-12-21 19:21') 1 неделю назад
+                        .comments__text
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, suscipit accusantium aut culpa eius esse architecto nobis sit excepturi expedita, repellendus quae praesentium rerum earum molestias ullam a doloribus at.
+                        button.comments__reply(type='button') ответить
+                        ul.comments
+                            li.comments__item
+                                .comments__header
+                                    img.comments__avatar(src='https://placehold.it/30' alt='')
+                                    .comments__author
+                                        .comments__name Петр
+                                        time.comments__update(datetime='2020-12-21 19:21') 1 неделю назад
+                                .comments__text
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, suscipit accusantium aut culpa eius esse architecto nobis sit excepturi expedita, repellendus quae praesentium rerum earum molestias ullam a doloribus at.
+                                button.comments__reply(type='button') ответить
+                    li.comments__item
+                        .comments__header
+                            img.comments__avatar(src='https://placehold.it/30' alt='')
+                            .comments__author
+                                .comments__name Сидикова Жанна
+                                time.comments__pubdate(datetime='2020-12-21 19:21') 1 неделю назад
+                        .comments__text
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, suscipit accusantium aut culpa eius esse architecto nobis sit excepturi expedita, repellendus quae praesentium rerum earum molestias ullam a doloribus at.
+                        button.comments__reply(type='button') ответить
+
 

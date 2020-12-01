@@ -1,18 +1,8 @@
-.relared{
-  padding: 3rem 0 0.5rem;
+.related{
+  padding-bottom:  0.5rem;
   border-bottom: 1px solid #1C1C1C;
 }
 
-.related__title{
-  line-height: 1.3;
-  font-size: 1.6rem;
-  color: $white;
-  font-weight: 500;
-  margin-bottom: 2rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
 .related__list{
   display: flex;
   flex-wrap: wrap;
@@ -25,6 +15,9 @@
   font-size: 1.4rem;
   color: #f3eba2;
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   @include post_a;
 
 }

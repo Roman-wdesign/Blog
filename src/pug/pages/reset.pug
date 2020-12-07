@@ -1,0 +1,19 @@
+extends ../layout/main.pug
+
+block title
+    | Reset
+
+block body
+    h1.page__title.page__title--center Вход
+    form.form.form--auth(action='/' method='post')
+        .form__group.form__group--md
+            input.form__control(type='e-mail' placeholder='Ваш e-mail')
+            span.form__line
+        .form__footer.form__footer--center
+            .form__group.form__group--md
+                button.btn.btn--blue.btn--rounded.btn--sm(type='submit') Восстановить
+            ul.form__footer-list
+                li
+                    a(href='signup.html') регистрация
+                li
+                    a(href='reset.html') вход

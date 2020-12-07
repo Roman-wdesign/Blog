@@ -1,0 +1,28 @@
+extends ../layout/main.pug
+
+block title
+    | Signup
+
+block body
+    h1.page__title.page__title--center Регистрация
+    form.form.form--auth(action='/' method='post')
+        .form__group.form__group--md
+            input.form__control(type='text' placeholder='Ваше имя')
+            span.form__line
+        .form__group.form__group--md
+            input.form__control(type='e-mail' placeholder='Ваш e-mail')
+            span.form__line
+        .form__group.form__group--md
+            input.form__control(type='password' placeholder='Пароль')
+            span.form__line
+        .form__group.form__group--md
+            input.form__control(type='password' placeholder='Подтвердите пароль')
+            span.form__line
+        .form__footer.form__footer--center
+            .form__group.form__group--md
+                button.btn.btn--blue.btn--rounded.btn--sm(type='submit') Регистрация
+            ul.form__footer-list
+                li
+                    a(href='#') войти
+                li
+                    a(href='#') восстановить

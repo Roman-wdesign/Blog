@@ -1,4 +1,12 @@
 
+
+.form{
+  &--auth{
+    max-width: 28rem;
+    margin: 0 auto;
+  }
+}
+
 .form__group{
   position: relative;
   margin-bottom: 1.5rem;
@@ -46,5 +54,22 @@
   z-index: 1;
   transition: width 0.2s ease-in;
 
+}
+
+.form__footer{
+  &--center{
+    text-align: center;
+  }
+
+}
+.form__footer-list{
+  line-height: 1.2;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  li{
+    margin: 0 0.5rem;
+    @include post_a;
+  }
 }
 

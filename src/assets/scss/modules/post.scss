@@ -33,12 +33,14 @@ font:{
 }
 
 .post__description{
+  @include post_a;
   font-size: 1.4rem;
   color: #d2d2d2;
 
 }
 
 .post__text{
+  @include post_a;
   padding-bottom: 1rem;
   font-size: 1.4rem;
   color: $white;
@@ -96,6 +98,7 @@ font:{
 }
 
 .post__data{
+
   display: flex;
   color: #828282;
   line-height: 1.2;
@@ -113,9 +116,11 @@ font:{
   }
 }
 
-.post__data-item{
-  &:not(:last-child):after{
-    content: '';
+.post__data-item {
+  @include post_a;
+
+  &:not(:last-child):after {
+    content: "";
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -124,7 +129,7 @@ font:{
     top: -2px;
 
     border-radius: 50%;
-    background-color: #c4c4c4;
+    background-color: #C4C4C4;
   }
 }
 
@@ -138,6 +143,7 @@ font:{
 }
 
 .post__actions{
+
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5rem;

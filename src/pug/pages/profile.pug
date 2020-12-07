@@ -1,0 +1,29 @@
+extends ../layout/main.pug
+
+block title
+    | Profile
+
+block body
+    h1.page__title Профиль
+    form.form(action='/' method='post')
+        .cabinet
+            .cabinet__form
+                .form__group.form__group--md
+                    input.form__control(type='text' placeholder='Ваше имя' value='Роман Габбасов')
+                    span.form__line
+                .form__group.form__group--md
+                    input.form__control(type='e-mail' placeholder='Ваш e-mail' value='mail@wbcplace.ru')
+                    span.form__line
+                .form__group.form__group--md
+                    input.form__control(type='password' placeholder='Новый пароль')
+                    span.form__line
+                .form__group.form__group--md
+                    input.form__control(type='password' placeholder='Подтвердите пароль')
+                    span.form__line
+            .cabinet__avatar
+                img(src='https://placehold.it/150' alt='')
+                label.cabinet__file
+                    input(type='file')
+                    | выбрать  аватар
+
+        button.btn.btn--blue.btn--rounded.btn--sm(type='submit') Сохранить

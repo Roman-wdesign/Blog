@@ -1,7 +1,7 @@
 
 @import "utils/vars";
-@import "utils/reset";
 @import "utils/mixins";
+@import "utils/reset";
 
 html {
   font-size: 62.5%;
@@ -50,5 +50,6 @@ body {
 @import "modules/tags";
 @import "modules/cabinet";
 @import "modules/modal";
+@import "modules/burger";
 
 

@@ -7,7 +7,9 @@ block body
     h1.page__title Мои работы
     article.work
         .work__preview
-            img(src='assets/img/work/work-1.jpg'  alt='work-1')
+            picture
+                source(srcset='http://placehold.it/575x150' media='(max-width: 575px)')
+                img(src='assets/img/work/work-1.jpg'  alt='work-1')
         .work__content
             h2.work__title
                 a(href='#' target='_blank') altermono.com
@@ -24,7 +26,9 @@ block body
 
     article.work
         .work__preview
-            img(src='assets/img/work/work-2.jpg'  alt='work-2')
+            picture
+                source(srcset='http://placehold.it/575x150' media='(max-width: 575px)')
+                img(src='assets/img/work/work-1.jpg'  alt='work-2')
         .work__content
             h2.work__title
                 a(href='#' target='_blank') codedoco.com
